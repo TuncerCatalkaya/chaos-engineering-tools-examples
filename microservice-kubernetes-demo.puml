@@ -1,26 +1,47 @@
 @startuml
 'https://plantuml.com/component-diagram
-
+left to right direction
 actor user
 node "microservice-kubernetes-demo" {
     rectangle "demo-catalog-customer" as demoCatalogCustomer #line.dashed {
+        interface CatalogController as catalogController
+        interface CustomerController as customerController
+
         component "catalog-service" as catalogService
         component "customer-service" as customerService
     }
 
+
     rectangle "demo-order" as demoOrder #line.dashed {
+        interface OrderController as orderController
+
         component "order-service" as orderService
     }
 
     component "apache-http" as apacheHttp
 }
 
-user -up-> apacheHttp: access
+catalogService - catalogController
+orderService ..> catalogController: use
+apacheHttp ..> catalogController: use
 
-catalogService -(0- apacheHttp: REST
-customerService -(0- apacheHttp: REST
-orderService -(0- apacheHttp: REST
+customerService - customerController
+orderService ..> customerController: use
+apacheHttp ..> customerController: use
 
-catalogService -right(0- orderService: REST
-customerService -down(0- orderService: REST
+orderService - orderController
+apacheHttp ..> orderController: use
+
+user --> apacheHttp: access
 @enduml
+
+apacheHttp ..> catalogController: use
+orderService .> catalogController: use
+
+    interface CustomerController as customerController
+    customerService - customerController
+    apacheHttp ..> customerController
+    orderService ..> customerController
+
+
+orderService -(0- apacheHttp: REST

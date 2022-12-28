@@ -17,10 +17,10 @@ node "microservice-kubernetes-demo" {
 
 user -up-> apacheHttp: access
 
-catalogService -(0- apacheHttp: REST
-customerService -(0- apacheHttp: REST
-orderService -(0- apacheHttp: REST
+catalogService -0)- apacheHttp: REST
+customerService -0)- apacheHttp: REST
+orderService -0)- apacheHttp: REST
 
-catalogService -right(0- orderService: REST
-customerService -down(0- orderService: REST
+catalogService -right0)- orderService: REST
+customerService -down0)- orderService: REST
 @enduml

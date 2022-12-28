@@ -8,11 +8,11 @@ entity customerService--><g id="elem_customerService"><rect fill="#F1F1F1" heigh
 entity orderService--><g id="elem_orderService"><rect fill="#F1F1F1" height="48.6211" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="124" x="153" y="260"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="257" y="265"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="255" y="267"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="255" y="271"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="84" x="168" y="295.1074">order-service</text></g><!--MD5=[8fc3522a43f8c7199df5e09e5bb0188e]
 entity user--><g id="elem_user"><ellipse cx="215" cy="542.5" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M215,550.5 L215,577.5 M202,558.5 L228,558.5 M215,577.5 L202,592.5 M215,577.5 L228,592.5 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="28" x="201" y="609.1074">user</text></g><!--MD5=[f176cd17515e79cf83aaa2a68ceaf64c]
 reverse link apacheHttp to user--><g id="link_apacheHttp_user"><path d="M215,458.16 C215,479.86 215,509.9 215,533.74 " fill="none" id="apacheHttp-backto-user" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="215,453.11,211,462.11,215,458.11,219,462.11,215,453.11" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="42" x="216" y="500.0283">access</text></g><!--MD5=[df99375ec059ba1910f3807e627a5bc9]
-link catalogService to apacheHttp--><g id="link_catalogService_apacheHttp"><path d="M110.95,142.11 C90.13,183.17 54.9,269.41 87,333 C102.93,364.56 134.93,388.19 162.95,403.92 " fill="none" id="catalogService-apacheHttp" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="34" x="95" y="290.0283">REST</text><path d="M87.5219,223.6678 A10,10 0 0 0 73.6915 220.7144" fill="none" style="stroke:#181818;stroke-width:1.5;"/><ellipse cx="79.13" cy="229.1063" fill="#FFFFFF" rx="6" ry="6" style="stroke:#181818;stroke-width:1.5;"/></g><!--MD5=[0704f5aac48ed41e1334b358c6438dfe]
-link customerService to apacheHttp--><g id="link_customerService_apacheHttp"><path d="M303.26,142.12 C306.4,182.11 309.94,265.4 293,333 C288.07,352.67 285.1,357.74 273,374 C264.98,384.77 254.61,395.13 244.85,403.83 " fill="none" id="customerService-apacheHttp" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="34" x="313" y="290.0283">REST</text><path d="M312.9022,220.3106 A10,10 0 0 0 298.7643 219.964" fill="none" style="stroke:#181818;stroke-width:1.5;"/><ellipse cx="305.66" cy="227.2062" fill="#FFFFFF" rx="6" ry="6" style="stroke:#181818;stroke-width:1.5;"/></g><!--MD5=[8357b073305a7ecbb6e38f1716b0b0da]
-link orderService to apacheHttp--><g id="link_orderService_apacheHttp"><path d="M215,309.27 C215,335.48 215,377.41 215,403.65 " fill="none" id="orderService-apacheHttp" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="34" x="223" y="363.0283">REST</text><path d="M222.0711,349.3777 A10,10 0 0 0 207.9289 349.3777" fill="none" style="stroke:#181818;stroke-width:1.5;"/><ellipse cx="215" cy="356.4487" fill="#FFFFFF" rx="6" ry="6" style="stroke:#181818;stroke-width:1.5;"/></g><!--MD5=[66cbf4c08a0018c7f3463cbe8258e9c8]
-link catalogService to orderService--><g id="link_catalogService_orderService"><path d="M126.32,142.19 C128.9,160.71 134.21,186.63 145,207 C155.62,227.05 172.74,245.89 187.39,259.86 " fill="none" id="catalogService-orderService" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="34" x="153" y="196.0283">REST</text><path d="M147.9387,197.4415 A10,10 0 0 0 135.4415 204.0613" fill="none" style="stroke:#181818;stroke-width:1.5;"/><ellipse cx="145" cy="207" fill="#FFFFFF" rx="6" ry="6" style="stroke:#181818;stroke-width:1.5;"/></g><!--MD5=[922d421daf7bc4ebc0becae2deb8b585]
-link customerService to orderService--><g id="link_customerService_orderService"><path d="M245.13,142 C232.32,150.17 220.33,160.71 213,174 C198.4,200.47 202.71,236.3 208.07,259.65 " fill="none" id="customerService-orderService" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="34" x="221" y="196.0283">REST</text><path d="M210.1571,210.9601 A10,10 0 0 0 196.0151 210.8879" fill="none" style="stroke:#181818;stroke-width:1.5;"/><ellipse cx="203.05" cy="217.995" fill="#FFFFFF" rx="6" ry="6" style="stroke:#181818;stroke-width:1.5;"/></g><!--MD5=[53be078c31bc9e4e109091bed53e1619]
+link catalogService to apacheHttp--><g id="link_catalogService_apacheHttp"><path d="M110.95,142.11 C90.13,183.17 54.9,269.41 87,333 C102.93,364.56 134.93,388.19 162.95,403.92 " fill="none" id="catalogService-apacheHttp" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="34" x="95" y="290.0283">REST</text><path d="M70.7381,234.5447 A10,10 0 0 0 84.5685 237.4981" fill="none" style="stroke:#181818;stroke-width:1.5;"/><ellipse cx="79.13" cy="229.1063" fill="#FFFFFF" rx="6" ry="6" style="stroke:#181818;stroke-width:1.5;"/></g><!--MD5=[0704f5aac48ed41e1334b358c6438dfe]
+link customerService to apacheHttp--><g id="link_customerService_apacheHttp"><path d="M303.26,142.12 C306.4,182.11 309.94,265.4 293,333 C288.07,352.67 285.1,357.74 273,374 C264.98,384.77 254.61,395.13 244.85,403.83 " fill="none" id="customerService-apacheHttp" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="34" x="313" y="290.0283">REST</text><path d="M298.4178,234.1019 A10,10 0 0 0 312.5557 234.4485" fill="none" style="stroke:#181818;stroke-width:1.5;"/><ellipse cx="305.66" cy="227.2062" fill="#FFFFFF" rx="6" ry="6" style="stroke:#181818;stroke-width:1.5;"/></g><!--MD5=[8357b073305a7ecbb6e38f1716b0b0da]
+link orderService to apacheHttp--><g id="link_orderService_apacheHttp"><path d="M215,309.27 C215,335.48 215,377.41 215,403.65 " fill="none" id="orderService-apacheHttp" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="34" x="223" y="363.0283">REST</text><path d="M207.9289,363.5198 A10,10 0 0 0 222.0711 363.5198" fill="none" style="stroke:#181818;stroke-width:1.5;"/><ellipse cx="215" cy="356.4487" fill="#FFFFFF" rx="6" ry="6" style="stroke:#181818;stroke-width:1.5;"/></g><!--MD5=[66cbf4c08a0018c7f3463cbe8258e9c8]
+link catalogService to orderService--><g id="link_catalogService_orderService"><path d="M126.32,142.19 C128.9,160.71 134.21,186.63 145,207 C155.62,227.05 172.74,245.89 187.39,259.86 " fill="none" id="catalogService-orderService" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="34" x="153" y="196.0283">REST</text><path d="M142.0613,216.5585 A10,10 0 0 0 154.5585 209.9387" fill="none" style="stroke:#181818;stroke-width:1.5;"/><ellipse cx="145" cy="207" fill="#FFFFFF" rx="6" ry="6" style="stroke:#181818;stroke-width:1.5;"/></g><!--MD5=[922d421daf7bc4ebc0becae2deb8b585]
+link customerService to orderService--><g id="link_customerService_orderService"><path d="M245.13,142 C232.32,150.17 220.33,160.71 213,174 C198.4,200.47 202.71,236.3 208.07,259.65 " fill="none" id="customerService-orderService" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="34" x="221" y="196.0283">REST</text><path d="M195.9429,225.0299 A10,10 0 0 0 210.0849 225.1021" fill="none" style="stroke:#181818;stroke-width:1.5;"/><ellipse cx="203.05" cy="217.995" fill="#FFFFFF" rx="6" ry="6" style="stroke:#181818;stroke-width:1.5;"/></g><!--MD5=[842d855475e6311ed44ca104616caf62]
 @startuml
 'https://plantuml.com/component-diagram
 
@@ -32,12 +32,12 @@ node "microservice-kubernetes-demo" {
 
 user -up-> apacheHttp: access
 
-catalogService -(0- apacheHttp: REST
-customerService -(0- apacheHttp: REST
-orderService -(0- apacheHttp: REST
+catalogService -0)- apacheHttp: REST
+customerService -0)- apacheHttp: REST
+orderService -0)- apacheHttp: REST
 
-catalogService -right(0- orderService: REST
-customerService -down(0- orderService: REST
+catalogService -right0)- orderService: REST
+customerService -down0)- orderService: REST
 @enduml
 
 @startuml
@@ -58,12 +58,12 @@ node "microservice-kubernetes-demo" {
 
 user -up-> apacheHttp: access
 
-catalogService -(0- apacheHttp: REST
-customerService -(0- apacheHttp: REST
-orderService -(0- apacheHttp: REST
+catalogService -0)- apacheHttp: REST
+customerService -0)- apacheHttp: REST
+orderService -0)- apacheHttp: REST
 
-catalogService -right(0- orderService: REST
-customerService -down(0- orderService: REST
+catalogService -right0)- orderService: REST
+customerService -down0)- orderService: REST
 @enduml
 
 PlantUML version 1.2022.13(Sat Nov 19 14:22:17 CET 2022)

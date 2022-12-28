@@ -1,0 +1,26 @@
+@startuml
+'https://plantuml.com/component-diagram
+skinparam linetype ortho
+skinparam nodesep 70
+
+actor user
+node "microservice-kubernetes-demo" {
+    component "catalog-service" as catalogService
+    component "customer-service" as customerService
+    component "order-service" as orderService
+    component "apache-http" as apacheHttp
+}
+
+catalogService -[hidden]> orderService
+orderService -[hidden]> customerService
+orderService -[hidden]-> apacheHttp
+
+user -up-> apacheHttp: access
+
+catalogService -left(0- apacheHttp: REST
+customerService -(0- apacheHttp: REST
+orderService -down(0- apacheHttp: REST
+
+catalogService -right(0- orderService: REST
+customerService -left(0- orderService: REST
+@enduml

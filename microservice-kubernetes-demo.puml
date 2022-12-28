@@ -15,7 +15,7 @@ node "microservice-kubernetes-demo" {
     component "apache-http" as apacheHttp
 }
 
-user -up-> apacheHttp: access
+user -up(0- apacheHttp: HTTP
 
 catalogService -0)- apacheHttp: REST
 customerService -0)- apacheHttp: REST

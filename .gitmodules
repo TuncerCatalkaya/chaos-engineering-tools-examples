@@ -4,3 +4,6 @@
 [submodule "microservice-kubernetes-demo/microservice-kubernetes"]
 	path = microservice-kubernetes-demo/microservice-kubernetes
 	url = https://github.com/ewolff/microservice-kubernetes
+[submodule "tools/chaos-mesh-tool/chaos-mesh"]
+	path = tools/chaos-mesh-tool/chaos-mesh
+	url = https://github.com/chaos-mesh/chaos-mesh

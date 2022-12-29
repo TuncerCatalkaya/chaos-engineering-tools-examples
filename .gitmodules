@@ -1,5 +1,5 @@
-[submodule "tools/kube-monkey/kube-monkey"]
-	path = tools/kube-monkey/kube-monkey
+[submodule "tools/kube-monkey-tool/kube-monkey"]
+	path = tools/kube-monkey-tool/kube-monkey
 	url = https://github.com/asobti/kube-monkey
 [submodule "microservice-kubernetes-demo/microservice-kubernetes"]
 	path = microservice-kubernetes-demo/microservice-kubernetes

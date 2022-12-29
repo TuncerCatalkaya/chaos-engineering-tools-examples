@@ -3,15 +3,9 @@
 
 actor user
 node "microservice-kubernetes-demo" {
-    rectangle "demo-catalog-customer" as demoCatalogCustomer #line.dashed {
-        component "catalog-service" as catalogService
-        component "customer-service" as customerService
-    }
-
-    rectangle "demo-order" as demoOrder #line.dashed {
-        component "order-service" as orderService
-    }
-
+    component "catalog-service" as catalogService
+    component "customer-service" as customerService
+    component "order-service" as orderService
     component "apache-http" as apacheHttp
 }
 
@@ -21,6 +15,6 @@ catalogService -0)- apacheHttp: REST
 customerService -0)- apacheHttp: REST
 orderService -0)- apacheHttp: REST
 
-catalogService -right0)- orderService: REST
-customerService -down0)- orderService: REST
+catalogService -0)- orderService: REST
+customerService -0)- orderService: REST
 @enduml

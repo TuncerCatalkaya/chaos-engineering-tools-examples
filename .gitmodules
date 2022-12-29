@@ -1,3 +1,0 @@
-[submodule "kube-monkey"]
-    path = tools/kube-monkey/kube-monkey
-    url = https://github.com/asobti/kube-monkey

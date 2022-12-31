@@ -19,7 +19,7 @@ The application itself was not running out of the box. All non-POST requests ret
 405 Request method 'POST' not supported
 ```
 The reason for this was that Thymeleaf form th:method="delete" and "put" is passing these as
-parameters in a 'POST' request instead of doing a 'DELETE' or 'PUT' request.
+parameters in a 'POST' request instead of doing an immediate 'DELETE' or 'PUT' request.
 In order for the 'POST' request with their parameters to work, it is required
 to add a spring filter to handle these type of request.  
 Sources: ([link1](https://stackoverflow.com/questions/52215877/thymeleaf-405-request-method-post-not-supported)

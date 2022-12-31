@@ -20,13 +20,13 @@ The application itself was not running out of the box. All non-POST requests ret
 ```
 The reason for this was that Thymeleaf form th:method="delete" and "put" is passing these as
 parameters in a 'POST' request instead of doing an immediate 'DELETE' or 'PUT' request.
-In order for the 'POST' request with their parameters to work, it is required
-to add a spring filter to handle these type of request.  
+In order for the 'POST' requests with their parameters to work, it is required
+to add a spring filter to handle these types of requests.  
 Sources: ([link1](https://stackoverflow.com/questions/52215877/thymeleaf-405-request-method-post-not-supported)
 |
 [link2](https://stackoverflow.com/questions/72744349/thymeleaf-thmethod-delete-put-leads-to-request-method-post-not-supported))
 
-Spring boot out of the box is not delivering this filter. To include these filter,
+Spring boot out of the box is not delivering this filter. To include this filter,
 the following properties should be added to the application.properties of the services:
 ```properties
 spring.mvc.hiddenmethod.filter.enabled=true

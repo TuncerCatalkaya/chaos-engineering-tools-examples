@@ -46,10 +46,10 @@ export DOCKER_ACCOUNT=tuncercatalkaya
 ## How to install / run the VM
 It is required to have [Virtualbox](https://www.virtualbox.org/) installed.
 
-The appliance is provided as a release of this repository. Download it and import the appliance.
+The appliance is provided as a release of this repository. Download it and import the appliance in virtualbox.
 It is recommended to use 6GB RAM, 2 CPUs and 32GB for disk usage.
 
 By default, the german keyboard layout is used. Also by default, the XFCE desktop environment should be selected.
-This can be changed on the top in the login screen.
+This can be changed on the top of the login screen.
 
 ![](imgs/change_desktop_environment.PNG)

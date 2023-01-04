@@ -1,6 +1,6 @@
 # Kube Monkey
 Kube monkey is a chaos engineering tool that can only kill pods. For further information
-check out the [kube-monkey repository](kube-monkey) (repo is linked as a submodule).
+check out the [kube-monkey repository](kube-monkey).
 
 In the [pod-kill-experiment directory](pod-kill-experiment) is explained how to run such
 an experiment for kube-monkey.
@@ -39,11 +39,18 @@ Check the status of pods/services.
 ```shell
 kubectl get pods                # get pods from default namespace
 kubectl get svc                 # get services from default namespace
-kubectl get pods -n kube-monkey # get pods from kube-monkey
+kubectl get pods -n kube-monkey # get pods from kube-monkey namespace
 ```
 Check helm deployment status.
 ```shell
 helm ls -n kube-monkey
+```
+Access demo application frontend  (start a separate terminal or open another tab for each command).
+```shell
+chromium # Start chromium (can be any browser)
+```
+```shell
+kubectl port-forward deploy/apache 8081:80 # Frontend can be accessed at -> localhost:8081
 ```
 
 ## How to stop the Kubernetes Cluster
@@ -57,13 +64,13 @@ Check the status of pods/services.
 ```shell
 kubectl get pods                # get pods from default namespace
 kubectl get svc                 # get services from default namespace
-kubectl get pods -n kube-monkey # get pods from kube-monkey
+kubectl get pods -n kube-monkey # get pods from kube-monkey namespace
 ```
 Check helm deployment status.
 ```shell
 helm ls -n kube-monkey
 ```
-Stop/Delete minikube.
+Stop/Delete minikube. Only required when you are done with all the Kubernetes experiments.
 ```shell
 minikube stop
 minikube delete

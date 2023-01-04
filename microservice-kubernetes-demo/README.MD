@@ -59,9 +59,6 @@ kubectl get svc # get services from default namespace
 Stop minikube.
 ```shell
 minikube stop
-```
-Delete minikube.
-```shell
 minikube delete
 ```
 

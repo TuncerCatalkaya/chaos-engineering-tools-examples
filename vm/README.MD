@@ -8,8 +8,8 @@ are pre-installed. It is also assumed that you are using this vm when trying to 
 | vboxuser   | vboxuser |
 
 ## Installed tools
-These tools are at least needed to run the experiments. The versions that are currently on vm are
-provided in the comments of each version check command.
+These tools are at least needed to run the experiments. The versions that are
+currently on the vm are provided in the comments of each version check command.
 
 ### Java
 ```shell

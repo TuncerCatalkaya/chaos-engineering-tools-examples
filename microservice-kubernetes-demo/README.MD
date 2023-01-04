@@ -19,28 +19,28 @@ add/edit/delete an entry.
 Assuming you are using the [vm](../vm/) in this repository.
 
 First start Minikube:
-```bash
+```shell
 minikube start --memory=4000  # Can also add --cpu NUMBER_OF_CPUS
                               # --driver=docker should automatically be used
 ```
 To check if minikube launched properly:
-```bash
+```shell
 kubectl config current-context # Should return minikube as current context
 ```
 To deploy the microservice-kubernetes-demo application:
-```bash
+```shell
 kubectl apply -f  ~/chaos-engineering-tools-examples/microservice-kubernetes-demo/microservices.yaml
 ```
 To check status of pods/services:
-```bash
+```shell
 kubectl get pods # get pods from default namespace
 kubectl get svc # get services from default namespace
 ```
 To access frontend:
-```bash
+```shell
 chromium # Start chromium (can be any browser)
 ```
-```bash
+```shell
 kubectl port-forward deploy/apache 8081:80 # Frontend can be accessed at -> localhost:8081
 ```
 

@@ -56,7 +56,7 @@ Check the status of pods/services.
 kubectl get pods # get pods from default namespace
 kubectl get svc # get services from default namespace
 ```
-Stop minikube.
+Stop/Delete minikube.
 ```shell
 minikube stop
 minikube delete

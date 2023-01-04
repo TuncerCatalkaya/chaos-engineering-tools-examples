@@ -31,6 +31,11 @@ kubectl version # Client version v1.26.0, Kustomize version v4.5.7
 minikube version # minikube version: v1.28.0
 ```
 
+### Helm
+```shell
+helm version # v3.10.3
+```
+
 ## Configured environment variables
 ~/.bashrc
 ```bash

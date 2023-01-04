@@ -79,6 +79,10 @@ kubectl get pods                # get pods from default namespace
 kubectl get svc                 # get services from default namespace
 kubectl get pods -n chaos-mesh  # get pods from chaos-mesh namespace
 ```
+Check the status of customresourcedefinitions.
+```shell
+kubectl get crd -n chaos-mesh # get crd from chaos-mesh namespace
+```
 Check helm deployment status.
 ```shell
 helm ls -n chaos-mesh

@@ -36,7 +36,7 @@ Check the status of pods/services.
 kubectl get pods # get pods from default namespace
 kubectl get svc # get services from default namespace
 ```
-Access frontend.
+Access frontend (start a separate terminal or open another tab for each command). 
 ```shell
 chromium # Start chromium (can be any browser)
 ```
@@ -56,7 +56,7 @@ Check the status of pods/services.
 kubectl get pods # get pods from default namespace
 kubectl get svc # get services from default namespace
 ```
-Stop/Delete minikube.
+Stop/Delete minikube.  Only required when you are done with all the Kubernetes experiments.
 ```shell
 minikube stop
 minikube delete

@@ -43,7 +43,7 @@ There are multiple places where it is possible to check the status of the experi
 
 ### Inside the created schedule
 Click on the created schedule.
-![](imgs/chaos_mesh_dashboard_schedules_created_schedule_click.PNG)
+![](imgs/chaos_mesh_dashboard_schedules_created_schedule_clickable_area.PNG)
 
 The event information are displayed in the marked area.
 ![](imgs/chaos_mesh_dashboard_schedules_inside_schedule.PNG)

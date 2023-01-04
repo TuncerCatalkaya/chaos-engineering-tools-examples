@@ -15,7 +15,7 @@ The Microservices Kubernetes Demo consists of three services and an apache HTTP 
 a reverse proxy. All the services communicate through REST calls. Each of the REST controller has calls to
 add/edit/delete an entry.
 
-## How to run the application
+## How to run the Kubernetes Cluster
 Assuming you are using the [vm](../vm/) in this repository.
 
 First start minikube.
@@ -42,6 +42,19 @@ chromium # Start chromium (can be any browser)
 ```
 ```shell
 kubectl port-forward deploy/apache 8081:80 # Frontend can be accessed at -> localhost:8081
+```
+
+## How to stop the Kubernetes Cluster
+Assuming you are using the [vm](../vm/) in this repository.
+
+Delete the microservice-kubernetes-demo application.
+```shell
+kubectl delete -f  ~/chaos-engineering-tools-examples/microservice-kubernetes-demo/microservices.yaml
+```
+Check the status of pods/services.
+```shell
+kubectl get pods # get pods from default namespace
+kubectl get svc # get services from default namespace
 ```
 
 ## Edited Version

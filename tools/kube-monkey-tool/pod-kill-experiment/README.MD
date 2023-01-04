@@ -5,7 +5,7 @@ is killed. It still depends on a coin toss from kube-monkey if it gets actually 
 ## How to run the experiment
 Run the Kubernetes Cluster by following the steps from [kube-monkey-tool README](../README.MD).
 
-After that, the experiment itself is running already. The logs should look like
+After that, the experiment itself is running already.
 
 ## How to check the status of the experiment
 Check logs of kube-monkey (start a separate terminal or open another tab).

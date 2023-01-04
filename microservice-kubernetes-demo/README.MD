@@ -9,9 +9,40 @@ The [microservice deployment files](microservices.yaml) are using the following 
 * [order](https://hub.docker.com/repository/docker/tuncercatalkaya/microservice-kubernetes-demo-order)
 
 ## Architecture
-todo: description of demo application
-
 ![](uml/microservice-kubernetes-demo.svg)
+
+The Microservices Kubernetes Demo consists of three services and an apache HTTP server that acts as
+a reverse proxy. All the services communicate through REST calls. Each of the REST controller has calls to
+add/edit/delete an entry.
+
+## How to run the application
+Assuming you are using the [vm](../vm/) in this repository.
+
+First start Minikube:
+```bash
+minikube start --memory=4000  # Can also add --cpu NUMBER_OF_CPUS
+                              # --driver=docker should automatically be used
+```
+To check if minikube launched properly:
+```bash
+kubectl config current-context # Should return minikube as current context
+```
+To deploy the microservice-kubernetes-demo application:
+```bash
+kubectl apply -f  ~/chaos-engineering-tools-examples/microservice-kubernetes-demo/microservices.yaml
+```
+To check status of pods/services:
+```bash
+kubectl get pods # get pods from default namespace
+kubectl get svc # get services from default namespace
+```
+To access frontend:
+```bash
+chromium # Start chromium (can be any browser)
+```
+```bash
+kubectl port-forward deploy/apache 8081:80 # Frontend can be accessed at -> localhost:8081
+```
 
 ## Edited Version
 The application itself was not running out of the box. All non-POST requests returned:

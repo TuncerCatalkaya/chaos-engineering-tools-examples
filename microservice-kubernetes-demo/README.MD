@@ -1,6 +1,6 @@
 # Microservice Kubernetes Demo
 This Microservice Kubernetes Demo application is used for the Chaos Engineering experiments.
-The application is written by ewolff (repo is linked as submodule).
+The [application](microservice-kubernetes) is written by ewolff (repo is linked as submodule).
 
 The [microservice deployment files](microservices.yaml) are using the following docker hub images:
 * [apache](https://hub.docker.com/repository/docker/tuncercatalkaya/microservice-kubernetes-demo-apache)
@@ -18,25 +18,25 @@ add/edit/delete an entry.
 ## How to run the application
 Assuming you are using the [vm](../vm/) in this repository.
 
-First start Minikube:
+First start minikube.
 ```shell
 minikube start --memory=4000  # Can also add --cpu NUMBER_OF_CPUS
                               # --driver=docker should automatically be used
 ```
-To check if minikube launched properly:
+Check if minikube launched properly.
 ```shell
 kubectl config current-context # Should return minikube as current context
 ```
-To deploy the microservice-kubernetes-demo application:
+Deploy the microservice-kubernetes-demo application.
 ```shell
 kubectl apply -f  ~/chaos-engineering-tools-examples/microservice-kubernetes-demo/microservices.yaml
 ```
-To check status of pods/services:
+Check the status of pods/services.
 ```shell
 kubectl get pods # get pods from default namespace
 kubectl get svc # get services from default namespace
 ```
-To access frontend:
+Access frontend.
 ```shell
 chromium # Start chromium (can be any browser)
 ```

@@ -63,3 +63,11 @@ Check helm deployment status.
 ```shell
 helm ls -n kube-monkey
 ```
+Stop minikube.
+```shell
+minikube stop
+```
+Delete minikube.
+```shell
+minikube delete
+```

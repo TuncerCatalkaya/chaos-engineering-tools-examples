@@ -56,6 +56,14 @@ Check the status of pods/services.
 kubectl get pods # get pods from default namespace
 kubectl get svc # get services from default namespace
 ```
+Stop minikube.
+```shell
+minikube stop
+```
+Delete minikube.
+```shell
+minikube delete
+```
 
 ## Edited Version
 The application itself was not running out of the box. All non-POST requests returned:

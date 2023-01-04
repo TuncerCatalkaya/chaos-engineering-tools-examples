@@ -23,5 +23,5 @@ was passed with the parameter `config.debug.schedule_immediate_kill=true`.
 Check pods. The customer-service and order-service should be killed every 30 seconds.
 It still depends on a coin toss from kube-monkey if it gets actually killed.
 ```shell
-kubectl get pods                # get pods from default namespace
+kubectl get pods # get pods from default namespace
 ```

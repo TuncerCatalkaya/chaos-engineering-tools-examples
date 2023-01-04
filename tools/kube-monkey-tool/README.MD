@@ -20,6 +20,8 @@ Deployment script to deploy the demo application with kube-monkey in a Kubernete
 Delete script to teardown the Kubernetes Cluster that was deployed from the deployment script.
 
 ## How to run the Kubernetes Cluster
+Assuming you are using the [vm](../vm/) in this repository.
+
 First start minikube.
 ```shell
 minikube start --memory=4000  # Can also add --cpu NUMBER_OF_CPUS
@@ -43,7 +45,21 @@ Check helm deployment status.
 ```shell
 helm ls -n kube-monkey
 ```
-Check logs of kube-monkey (start a separate terminal or open another tab).
+
+## How to stop the Kubernetes Cluster
+Assuming you are using the [vm](../vm/) in this repository.
+
+Run the delete script.
 ```shell
-kubectl logs -n kube-monkey -l release=kube-monkey -f
+~/chaos-engineering-tools-examples/tools/kube-monkey-tool/demo-kube-monkey-delete.sh
+```
+Check the status of pods/services.
+```shell
+kubectl get pods                # get pods from default namespace
+kubectl get svc                 # get services from default namespace
+kubectl get pods -n kube-monkey # get pods from kube-monkey
+```
+Check helm deployment status.
+```shell
+helm ls -n kube-monkey
 ```

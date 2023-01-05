@@ -1,5 +1,5 @@
 # Pod kill experiment for chaos-mesh
-Every minute a random pod, from the ones that opt-in (customer-service and order-service),
+Every minute a random pod, from the ones that opted-in (customer-service and order-service),
 is killed.
 
 ## How to run the experiment

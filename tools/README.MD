@@ -4,7 +4,7 @@ used for the defined experiments.
 
 ## Experiments
 The experiments are performed on the
-[microservice-kubernetes-demo](../microservices-demo).
+[microservice-kubernetes-demo](../microservice-kubernetes-demo).
 
 If the experiment cant be run with the planned experiment criteria, then the
 next best settings to get as close as possible to the planned experiment are used.

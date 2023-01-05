@@ -1,6 +1,6 @@
 # Kube Monkey
 Kube monkey is a chaos engineering tool that can only kill pods. For further information
-check out the [kube-monkey repository](kube-monkey).
+check out the kube-monkey repository (linked as a submodule in this directory).
 
 In the [pod-kill-experiment directory](pod-kill-experiment) is explained how to run such
 an experiment for kube-monkey.

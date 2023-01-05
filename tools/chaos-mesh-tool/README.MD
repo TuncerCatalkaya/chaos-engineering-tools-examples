@@ -1,7 +1,7 @@
 # Chaos Mesh
 Chaos Mesh is a chaos engineering tool that has many features such as PodChaos
 and StressChaos. For further information
-check out the [chaos-mesh repository](chaos-mesh).
+check out the chaos-mesh repository (linked as a submodule in this directory).
 
 In the [pod-kill-experiment directory](pod-kill-experiment) is explained how to run such
 an experiment for chaos-mesh.

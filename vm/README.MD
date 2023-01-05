@@ -1,6 +1,7 @@
 # Virtual Machine (Debian-11.6)
-This Virtual Machine is used to run all the experiments in the repository. All the tools that are required
-are pre-installed. It is also assumed that you are using this vm when trying to run the experiments.
+This Virtual Machine is used to run all the experiments in the repository. All the required software
+to run the experiments are pre-installed. It is also assumed that you are using this vm when trying
+to run the experiments.
 
 ## Configured Users
 | Name       | Password |

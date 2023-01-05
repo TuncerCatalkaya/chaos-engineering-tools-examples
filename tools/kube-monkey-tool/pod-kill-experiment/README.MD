@@ -1,5 +1,5 @@
 # Pod kill experiment for kube-monkey
-Every 30 seconds a random pod, from the ones that opt-in (customer-service and order-service),
+Every 30 seconds a random pod, from the ones that opted-in (customer-service and order-service),
 is killed. It still depends on a coin toss from kube-monkey if it gets actually killed.
 
 ## How to run the experiment

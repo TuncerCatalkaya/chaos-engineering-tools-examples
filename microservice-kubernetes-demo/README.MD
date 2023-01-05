@@ -16,8 +16,6 @@ a reverse proxy. All the services communicate through REST calls. Each of the RE
 add/edit/delete an entry.
 
 ## How to run the Kubernetes Cluster
-Assuming you are using the [vm](../vm/) in this repository.
-
 First start minikube.
 ```shell
 minikube start --memory=4000  # Can also add --cpu NUMBER_OF_CPUS
@@ -45,8 +43,6 @@ kubectl port-forward deploy/apache 8081:80 # Frontend can be accessed at -> loca
 ```
 
 ## How to stop the Kubernetes Cluster
-Assuming you are using the [vm](../vm/) in this repository.
-
 Delete the microservice-kubernetes-demo application.
 ```shell
 kubectl delete -f  ~/chaos-engineering-tools-examples/microservice-kubernetes-demo/microservices.yaml

@@ -20,8 +20,6 @@ Deployment script to deploy the demo application with kube-monkey in a Kubernete
 Delete script to teardown the Kubernetes Cluster that was deployed from the deployment script.
 
 ## How to run the Kubernetes Cluster
-Assuming you are using the [vm](../vm/) in this repository.
-
 First start minikube.
 ```shell
 minikube start --memory=4000  # Can also add --cpu NUMBER_OF_CPUS
@@ -54,8 +52,6 @@ kubectl port-forward deploy/apache 8081:80 # Frontend can be accessed at -> loca
 ```
 
 ## How to stop the Kubernetes Cluster
-Assuming you are using the [vm](../vm/) in this repository.
-
 Run the delete script.
 ```shell
 ~/chaos-engineering-tools-examples/tools/kube-monkey-tool/demo-kube-monkey-delete.sh

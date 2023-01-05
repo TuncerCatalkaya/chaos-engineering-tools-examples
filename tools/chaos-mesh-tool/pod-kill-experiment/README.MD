@@ -52,7 +52,6 @@ The event information are displayed in the marked area.
 ![](imgs/chaos_mesh_dashboard_schedules_dashboard.PNG)
 
 ### At the events
-Click on the created schedule.
 ![](imgs/chaos_mesh_dashboard_schedules_events.PNG)
 
 ### Check pods in Kubernetes

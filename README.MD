@@ -13,4 +13,7 @@ In the [vm directory](vm)
 is the virtual machine that has all the required software pre-installed.
 
 ## Helpful links
-Todo
+* https://dev.to/craigmorten/k8s-chaos-dive-1-kube-monkey-4431
+
+## License
+This project is licensed under the Apache License v2.0 - see the (LICENSE)[./LICENSE] file for details.
